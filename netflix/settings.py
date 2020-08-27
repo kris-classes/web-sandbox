@@ -25,9 +25,10 @@ SECRET_KEY = '*$z60c(7zjyc_r@7eh1-xsanui3%e&2=m$#^xd(xz0)pcekbd9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ancient-fortress-38211.herokuapp.com',
-                 'localhost',
-                 ]
+ALLOWED_HOSTS = [
+    'localhost',
+    'pure-escarpment-54887.herokuapp.com',
+]
 
 
 # Application definition
