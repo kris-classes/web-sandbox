@@ -19,5 +19,6 @@ from app import views  # New
 
 urlpatterns = [
     path('', views.index),  # New
+    path('search', views.search),
     path('admin/', admin.site.urls),
 ]
