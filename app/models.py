@@ -15,7 +15,7 @@ class Video(models.Model):
 
 
 class Genre(models.Model):
-    name = models.CharField(max_length=64)
+    name = models.CharField(max_length=64, blank=True)
 
     def __str__(self):
         return f'Genre: {self.name}'

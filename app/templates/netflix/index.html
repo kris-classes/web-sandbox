@@ -14,7 +14,11 @@
   <i class="twitter icon"></i>
 </button>
 
-{{ video.title }} - {{ video.duration }}
+<ul>
+{% for video in videos %}
+    <li>{{ video.title }} - {{ video.duration }}</li>
+{% endfor %}
+</ul>
 
 <ul>
   {% for genre in genres %}
@@ -22,7 +26,7 @@
   {% endfor %}
 </ul>
 
-<form>
+<form method="post" action="{%  url_f %}search">
     {% csrf_token %}
     <br />
     {{ myform }}

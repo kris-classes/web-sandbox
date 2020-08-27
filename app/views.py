@@ -11,7 +11,18 @@ def index(request):
     if request.method == 'POST':
         return HttpResponse(f'data -- {request.POST}')
     genres = Genre.objects.all()
-    video = Video.objects.first()
+    videos = Video.objects.all()
     myvideoform = VideoForm()
+    context = {
+        'videos': videos,
+        'genres': genres,
+        'myform': myvideoform,
+    }
     #return HttpResponse('Welcome to Crappy Netflix')
-    return render(request, 'index.html', {'video': video, 'genres': genres, 'myform': myvideoform})
+    return render(request, 'netflix/index.html', context)
+
+def search(request):
+    if request.method == 'POST':
+        return HttpResponse(f'data -- {request.POST}')
+    else:
+        return HttpResponse('no data posted. Please search first')
