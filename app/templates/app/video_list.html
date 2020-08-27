@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video List</title>
+</head>
+<body>
+
+<h1>Videos List goes here</h1>
+
+{% for video in videos %}
+    <li>Title:{{ video.title }} Duration: {{ video.duration }} minutes -- Genre Name: {{ video.genre.name }}</li>
+{% endfor %}
+</body>
+</html>
