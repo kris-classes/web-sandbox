@@ -1,0 +1,1 @@
+[{"model": "app.genre", "pk": 6, "fields": {"name": "Action"}}, {"model": "app.genre", "pk": 7, "fields": {"name": "Drama"}}, {"model": "app.genre", "pk": 8, "fields": {"name": "Fantasy"}}, {"model": "app.genre", "pk": 9, "fields": {"name": "Comedy"}}]
