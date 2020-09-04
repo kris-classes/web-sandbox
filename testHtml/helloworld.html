@@ -1,0 +1,35 @@
+<!--CSS-->
+<style>
+    #myheader {
+        color:red;
+    }
+    .italicpragraph{
+        font-style: italic;
+    }
+</style>
+<!--HTML-->
+<h1 id = "myheader"> hello</h1>
+<h1 id = "myheader"> hello2</h1>
+<h1 id = "myheader"> hello3</h1>
+<p class = "italicpragraph"> Lorem ipsum blah blah</p>
+<p class = "italicpragraph"> Bloooooooooooooooop</p>
+<div id ="root">
+    <b id ="water">
+        Water
+    </b>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js" integrity="sha512-SUJujhtUWZUlwsABaZNnTFRlvCu7XGBZBL1VF33qRvvgNk3pBS9E353kcag4JAv05/nsB9sanSXFbdHAUW9+lg==" crossorigin="anonymous">
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js" integrity="sha512-SYsXmAblZhruCNUVmTp5/v2a1Fnoia06iJh3+L9B9wUaqpRVjcNBQsqAglQG9b5+IaVCfLDH5+vW923JL5epZA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous"></script>
+<script>
+    const water = document.getElementById('water')
+    console.log('Setting water!')
+    setTimeout(function (){
+        water.innerText ='sand'
+    },5000)
+    console.log('Done!')
+    const root = document.getElementById('root')
+</script>
